@@ -123,7 +123,8 @@
                         <!--begin::Table row-->
                         <tr class="text-start text-muted fw-bold fs-7 text-uppercase gs-0">
                             <th class="">ID</th>
-                            <th class="">Kat/Br</th>
+                            <th class="">Kategoriýa</th>
+                            <th class="">Brend</th>
                             <th class="">Name</th>
                             <th class="">Gelen baha</th>
                             <th class="">Satyş baha</th>
@@ -139,7 +140,8 @@
                         @foreach($data as $item)
                             <tr>
                                 {!! \App\Helpers\Datatable::text($item->id) !!}
-                                {!! \App\Helpers\Datatable::titleDescription($item->category->name ?? null, $item->brand->name ?? null) !!}
+                                {!! \App\Helpers\Datatable::text($item->category->name ?? null) !!}
+                                {!! \App\Helpers\Datatable::text($item->brand->name ?? null) !!}
                                 {!! \App\Helpers\Datatable::text($item->name) !!}
                                 {!! \App\Helpers\Datatable::text(number_format($item->price1, 2)) !!}
                                 {!! \App\Helpers\Datatable::text(number_format($item->price2, 2)) !!}

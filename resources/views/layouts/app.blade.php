@@ -104,9 +104,9 @@
                                         <!--end::Avatar-->
                                         <!--begin::Username-->
                                         <div class="d-flex flex-column">
-                                            <div class="fw-bold d-flex align-items-center fs-5">{{Auth::user()->fullname}}
+                                            <div class="fw-bold d-flex align-items-center fs-5">{{Auth::user()->name}}
                                                 <span class="badge badge-light-success fw-bold fs-8 px-2 py-1 ms-2">Admin</span></div>
-                                            <a href="javascript:void(0)" class="fw-semibold text-muted text-hover-primary fs-7">{{Auth::user()->email}}</a>
+                                            <a href="javascript:void(0)" class="fw-semibold text-muted text-hover-primary fs-7">{{Auth::user()->username}}</a>
                                         </div>
                                         <!--end::Username-->
                                     </div>
@@ -117,7 +117,7 @@
                                 <!--end::Menu separator-->
                                 <!--begin::Menu item-->
                                 <div class="menu-item px-5 my-1">
-                                    <a href="{{route("profile.index")}}" class="menu-link px-5">Account Settings</a>
+                                    <a href="{{route("profile.index")}}" class="menu-link px-5">Profil</a>
                                 </div>
                                 <!--end::Menu item-->
                                 <!--begin::Menu item-->
@@ -128,7 +128,7 @@
                                         <div class="nav-item">
                                             <a class="menu-link px-5" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                 this.closest('form').submit(); " role="button">
-                                                Sign out
+                                                Ulgamdan çyk
                                             </a>
                                         </div>
                                     </form>
