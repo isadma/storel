@@ -126,7 +126,6 @@
                             <th class="">Kategoriýa</th>
                             <th class="">Brend</th>
                             <th class="">Name</th>
-                            <th class="">Gelen baha</th>
                             <th class="">Satyş baha</th>
                             <th class="">Bellik</th>
                             <th class="">Üýtgedilen wagty</th>
@@ -143,7 +142,6 @@
                                 {!! \App\Helpers\Datatable::text($item->category->name ?? null) !!}
                                 {!! \App\Helpers\Datatable::text($item->brand->name ?? null) !!}
                                 {!! \App\Helpers\Datatable::text($item->name) !!}
-                                {!! \App\Helpers\Datatable::text(number_format($item->price1, 2)) !!}
                                 {!! \App\Helpers\Datatable::text(number_format($item->price2, 2)) !!}
                                 {!! \App\Helpers\Datatable::text($item->note) !!}
                                 {!! \App\Helpers\Datatable::text($item->updated_at) !!}
