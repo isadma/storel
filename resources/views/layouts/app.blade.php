@@ -201,8 +201,7 @@
                                 </a>
                                 <!--end:Menu link-->
                             </div>
-                            @include("menus.users")
-                            @include("menus.configurations")
+                            @include("menus.default")
                         </div>
                         <!--end::Menu-->
                     </div>
