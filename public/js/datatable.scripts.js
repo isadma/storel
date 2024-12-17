@@ -3,6 +3,9 @@ $.extend( true, $.fn.dataTable.defaults, {
     lengthMenu: [50, 75, 100, 150],
     pageLength: 50,
     order: [[0, 'desc']],
+    columnDefs: [
+        { searchable: false, targets: [0, -1] }
+    ],
     buttons: [
         {
             extend : "pdfHtml5",
@@ -77,3 +80,7 @@ $(".kt_daterangepicker_dropdown").daterangepicker({
         format: 'DD/MM/YYYY'
     }
 });
+
+$('#dtSearch').keyup(function(){
+    dataTable.search($(this).val()).draw() ;
+})
